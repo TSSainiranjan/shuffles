@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <script>
-    // Redirect all paths to index.html for SPA routing
-    var path = window.location.pathname;
-    window.location.replace("/shuffles/" + "#"+ path);
-  </script>
+<meta charset="utf-8">
+<script>
+var path = window.location.pathname.replace("/shuffles", "");
+window.location.replace("/shuffles/#" + path);
+</script>
 </head>
 <body></body>
 </html>

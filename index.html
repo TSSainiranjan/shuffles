@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#020617" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Shuffles" />
+    <title>Snooker Shuffles Picker</title>
+    <link rel="manifest" href="/shuffles/manifest.json" />
+    <link rel="icon" type="image/png" href="/shuffles/icon.png" />
+    <link rel="apple-touch-icon" href="/shuffles/icon.png" />
+    <script>
+      (function(){try{var stored=window.localStorage.getItem('theme');var mode=(stored==='light'||stored==='dark'||stored==='auto')?stored:'auto';var prefersDark=window.matchMedia('(prefers-color-scheme: dark)').matches;var resolved=mode==='auto'?(prefersDark?'dark':'light'):mode;var root=document.documentElement;root.classList.remove('light','dark');root.classList.add(resolved);if(mode==='auto'){root.removeAttribute('data-theme')}else{root.setAttribute('data-theme',mode)}root.style.colorScheme=resolved;}catch(e){}})();
+    </script>
+    <script type="module" crossorigin src="/shuffles/assets/index-BuiT-4kP.js"></script>
+    <link rel="stylesheet" crossorigin href="/shuffles/assets/index-Bk5otxpS.css">
+  <link rel="manifest" href="/shuffles/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/shuffles/registerSW.js"></script></head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>

@@ -1,16 +1,19 @@
 {
   "name": "",
   "private": true,
+  "homepage": "https://TSSainiranjan.github.io/shuffles",
   "type": "module",
   "imports": {
     "#/*": "./src/*"
   },
-  "scripts": {
-    "dev": "vite --port 3000",
-    "build": "vite build",
-    "preview": "vite preview",
-    "test": "vitest run"
-  },
+"scripts": {
+  "dev": "vite --port 3000",
+  "build": "vite build",
+  "preview": "vite preview",
+  "test": "vitest run",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+},
   "dependencies": {
     "@tanstack/react-devtools": "latest",
     "@tanstack/react-router": "latest",
@@ -33,6 +36,7 @@
     "@types/react-dom": "^19.2.0",
     "@vitejs/plugin-react": "^5.1.4",
     "autoprefixer": "^10.4.27",
+    "gh-pages": "^6.3.0",
     "jsdom": "^28.1.0",
     "postcss": "^8.5.8",
     "tailwindcss": "^4.2.1",
